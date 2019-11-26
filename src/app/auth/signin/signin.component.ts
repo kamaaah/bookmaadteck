@@ -27,7 +27,6 @@ export class SigninComponent implements OnInit {
       password: ['', [Validators.required, Validators.pattern(/[0-9-9a-zA-Z]{6,}/)]]
     });
   }
-  // (/[0-9a-zA-Z]{6,}/)
 
   onSubmit() {
     const email = this.signInForm.get('email').value;
